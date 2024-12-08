@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main > section#Login_image{
+    margin-left: 10px;
+    display: block;
+    width: 70%;
+    height: auto;
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Passion+One&family=Share+Tech+Mono&family=Sriracha&display=swap');
+
+/* color pallet and fonts */
+:root{
+    --default_font: "Share Tech Mono", monospace;
+
+    --red_1: #A60311;
+    --red_2: #01f3f7;
+    --red_3: #264141;
+    --wine: #26161A;
+    --turq_blue: #038C8C;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--default_font);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+body{
+    background-color: var(--red_3);
+}
+#container{
+    position: relative;
+    min-height: 100vh;
+}
+
+main{
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+}
+main > section#Login_image{
+    background-image: url(../images/Imagebackgroud.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    border-radius: 5px;
+}
+
+main > section#Login{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--turq_blue);
+    border-radius: 5px;
+}
+
+
+main > section#Login > h1{
+    margin-top: 8px;
+    border-top: 2px solid var(--red_2);
+    padding: 5px 0px;
+    border-bottom: 2px solid var(--red_2);
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+main > section#Login > p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+}
+
+fieldset{
+    background-color: #025d5d;
+    margin: auto;
+    padding: 10px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    padding: 0px 10px;
+    margin: 5px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    background-color: #025d5d;
+    width: 100%;
+}
+
+.divider > img{
+    aspect-ratio: 1/1;
+    width: 40px;    
+    margin-top: 2px;
+}
+
+.divider:hover, .divider label{
+    cursor: pointer;
+}
+
+section#Login  input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+#login_i:hover, #forgot_p:hover{
+    background-color: #025d5d;
+    color: white;
+    cursor: pointer;
+}

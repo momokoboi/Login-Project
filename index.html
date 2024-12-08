@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- link stylesheets -->
+    <link rel="stylesheet" href="Styles/style.css" media="screen">
+    <link rel="stylesheet" href="Styles/tablets.css" media="screen and (min-width: 577px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="Styles/Desktops.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+    <div id="container">
+        <main>
+            <section id="Login_image">
+            </section>
+            <section id="Login">
+                <h1>Login</h1>
+                <p>Welcome!. Login to acess your account and be able to change configurations of the enviroment</p>
+                <fieldset>
+                    <form action="action.php" method="post" autocomplete="on">
+                        <p>
+                            <div class="divider">
+                                <img src="images/person.png" alt="person">
+                                <label for="iuser">Username or Email:</label>
+                            </div>
+                            <div class="divider"><input type="text" name="user" id="iuser" autocomplete="email" placeholder="Username or Email"></div>
+                        </p>
+        
+                        <p>
+                            <div class="divider">
+                                <img src="images/lock.png" alt="lock">
+                                <label for="ipass">Password:</label>
+                            </div>
+                            <div class="divider"><input type="password" name="pass" id="ipass" autocomplete="current-password" placeholder="Password"></div>
+
+                        </p>
+                    </form>
+                </fieldset>
+                <input type="submit" value="Login" id="login_i">
+                <input type="button" value="Forgot Password" id="forgot_p">
+            </section>
+        </main>
+    </div>
+</body>
+</html>

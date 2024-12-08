@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+main{
+    max-width: 50%;
+}
+
+main > section#Login_image{
+    height: 180px;
+    background-position: left center;
+    border-radius: 5px;
+}
