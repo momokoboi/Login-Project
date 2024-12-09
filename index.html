@@ -19,13 +19,13 @@
                 <h1>Login</h1>
                 <p>Welcome!. Login to acess your account and be able to change configurations of the enviroment</p>
                 <fieldset>
-                    <form action="action.php" method="post" autocomplete="on">
+                    <form action="action.php" method="post" autocomplete="on" id="forma">
                         <p>
                             <div class="divider">
                                 <img src="images/person.png" alt="person">
                                 <label for="iuser">Username or Email:</label>
                             </div>
-                            <div class="divider"><input type="text" name="user" id="iuser" autocomplete="email" placeholder="Username or Email"></div>
+                            <div class="divider"><input type="text" name="user" id="iuser" autocomplete="email" placeholder="Username or Email" required></div>
                         </p>
         
                         <p>
@@ -33,13 +33,15 @@
                                 <img src="images/lock.png" alt="lock">
                                 <label for="ipass">Password:</label>
                             </div>
-                            <div class="divider"><input type="password" name="pass" id="ipass" autocomplete="current-password" placeholder="Password"></div>
-
+                            <div class="divider"><input type="password" name="pass" id="ipass" autocomplete="current-password" placeholder="Password" required minlength="8" maxlength="20"></div>
                         </p>
+                        
+                        
                     </form>
                 </fieldset>
-                <input type="submit" value="Login" id="login_i">
+                <input type="submit" value="Login" id="login_i" form="forma">
                 <input type="button" value="Forgot Password" id="forgot_p">
+                
             </section>
         </main>
     </div>
